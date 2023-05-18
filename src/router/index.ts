@@ -1,26 +1,32 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import { i18n, setLocale } from "@/i18n";
 
-const routes: Array<RouteRecordRaw> = [
+import type { RouteRecordRaw } from "vue-router";
+
+const routes: RouteRecordRaw[] = [
   {
-    path: "/",
+    path: "/:locale?",
     name: "home",
     component: HomeView,
-  },
-  {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    children: [
+      {
+        path: "",
+        name: "home",
+        component: HomeView,
+      },
+    ],
   },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+});
+
+router.beforeEach(async (to) => {
+  const paramsLocale = (to.params.locale as string) || "en";
+  setLocale(i18n, paramsLocale);
 });
 
 export default router;

@@ -1,0 +1,27 @@
+{
+  "title": "Dream and Win Big with Our Lottery",
+  "postTitleParagraph": "With our lottery, you have the chance to win millions of dollars and change your life forever. But even if you don't become the lucky winner of the grand prize, you can still win significant sums of money and enjoy the thrill of playing. Our lottery is an opportunity to experience the excitement of gambling and have a chance at a big win.",
+  "form": {
+    "title": "Subscription form",
+    "placeholders": {
+      "name": "Name*",
+      "email": "Email*",
+      "phone": "Phone*"
+    },
+    "errors": {
+      "requiredError": "Field is required",
+      "emailError": "Value doesn't look like an email",
+      "minError17": "Minimum number of characters is 17"
+    },
+    "buttons": {
+      "subscribe": "Subscribe"
+    }
+  },
+  "postFromParagraph": "We guarantee the fairness and transparency of our lottery by using the most advanced technologies for generating random numbers and controlling the game. We also provide our players with a high level of security and confidentiality so that you can enjoy the game to the fullest. Join us today and give yourself a chance for a new life!",
+  "footer": {
+    "privacyPolicyTerms": "Privacy Policy/Terms",
+    "conditions": "Conditions",
+    "stayConnected": "Stay connected"
+  }
+}
+

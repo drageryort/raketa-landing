@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+:root{
+  --color-orange: #EC7E25;
+  --color-blue: #2E35AB;
+  --color-red: #DA0000;
+  --color-gradient-orange: linear-gradient(180deg, #EC7E25 0%, #C43A2E 100%);
+  --color-gradient-white: linear-gradient(180deg, #FFFFFF 0%, #D7D7D7 100%);
+
+  --color-white: #FFFFFF;
+  --color-durty-white: #F1F1F1;
+  --color-gray: #B6B6B6;
+  --color--light-gray: #ACACAC;
+
+  --color-black: #010207;
+  --color-gradient-blue: linear-gradient(180deg, #121434 0%, #0B0C1C 100%);
+
+  --color-promo-info-blue: #141735;
+  --color-rangeLike-el: rgba(46, 53, 171, .4);
+  --color-rangeLike-progress: linear-gradient(270deg, #6971EE 0%, #2E35AB 100%);
+
+  --color-dots-inactive: #263169;
+
+  --color-circles-dark-blue: #121432;
+  --color-popup-dark-blue: #050716;
+}

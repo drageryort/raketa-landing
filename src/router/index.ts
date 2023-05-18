@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHistory, RouterView } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import { i18n, setLocale } from "@/i18n";
 
@@ -7,8 +7,7 @@ import type { RouteRecordRaw } from "vue-router";
 const routes: RouteRecordRaw[] = [
   {
     path: "/:locale?",
-    name: "home",
-    component: HomeView,
+    component: RouterView,
     children: [
       {
         path: "",
